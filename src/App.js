@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "./components/layout/Navbar";
 import Index from "./components/layout/Index";
@@ -12,7 +12,8 @@ import { ContextController } from "./context";
 const App = () => {
   return (
     <ContextController>
-      <Router>
+      <HashRouter basename='/'>
+      {/* <Router> */}
         <>
           <Navbar />
           <div className="container">
@@ -22,7 +23,8 @@ const App = () => {
             </Switch>
           </div>
         </>
-      </Router>
+      {/* </Router> */}
+      </HashRouter>
     </ContextController>
   );
 };
