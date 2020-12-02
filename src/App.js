@@ -12,8 +12,7 @@ import { ContextController } from "./context";
 const App = () => {
   return (
     <ContextController>
-      <HashRouter basename='/'>
-      {/* <Router> */}
+      <Router basename='/'>
         <>
           <Navbar />
           <div className="container">
@@ -23,8 +22,7 @@ const App = () => {
             </Switch>
           </div>
         </>
-      {/* </Router> */}
-      </HashRouter>
+      </Router>
     </ContextController>
   );
 };
