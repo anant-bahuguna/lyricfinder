@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lyricfinder/precache-manifest.e4dc35d47438cc9d5f874d548884278a.js"
+  "/lyricfinder/precache-manifest.551520197775ab81e943846c4d4b2526.js"
 );
 
 self.addEventListener('message', (event) => {
